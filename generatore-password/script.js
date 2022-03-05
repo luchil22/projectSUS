@@ -26,6 +26,6 @@ function genPassword() {
 function copyClipboard() {
     output.select();
     document.execCommand('copy');
-    alert("Password Copied!");
+    alert("Password Copiata!");
 }
 genPassword();
