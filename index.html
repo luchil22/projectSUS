@@ -7,16 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="sushub.png">
+    <link rel="icon" href="img/logo.png">
     <title>SUS HUB</title>
 </head>
 
 <body>
     <nav class="navbar">
-        <img src="sushub.png" class="logo" alt="">
-        <ul class="links-container">
-            <li class="link-item"><a href="home.html" class="link">button</a></li>
-        </ul>
+        <img src="img/sushub.png" class="logo" alt="">
+        <div class="links-container">
+            <div class="link">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+            </div>
     </nav>
 
     <header class="header">
@@ -29,20 +35,27 @@
     </header>
 
     <section class="blogs-section">
-        <div class="blog-card">
-            <img src="amogOS.png" class="blog-image" alt="">
-            <h1 class="blog-title">tris</h1>
-        </div>
+        <a href="tris/tris.html">
+            <div class="blog-card">
+                <img src="img/Immagine 2022-03-05 113808.png" class="blog-image" alt="">
+                <h1 class="blog-title">tris</h1>
+            </div>
+        </a>
 
-        <div class="blog-card">
-            <img src="amogOS.png" class="blog-image" alt="">
-            <h1 class="blog-title">typing speed</h1>
-        </div>
 
-        <div class="blog-card">
-            <img src="amogOS.png" class="blog-image" alt="">
-            <h1 class="blog-title">snake</h1>
-        </div>
+        <a href="typing/typing.html">
+            <div class="blog-card">
+                <img src="amogOS.png" class="blog-image" alt="">
+                <h1 class="blog-title">typing speed</h1>
+            </div>
+        </a>
+
+        <a href="typing/typing.html">
+            <div class="blog-card">
+                <img src="amogOS.png" class="blog-image" alt="">
+                <h1 class="blog-title">snake</h1>
+            </div>
+        </a>
 
         <div class="blog-card">
             <img src="amogOS.png" class="blog-image" alt="">
@@ -60,10 +73,52 @@
         </div>
 
     </section>
+    <header class="altro">
+        <div>
+            <h2>Altro</h2>
+        </div>
+    </header>
+
+    <section class="blogs-section">
+        <a href="tris/tris.html">
+            <div class="blog-card">
+                <img src="img/Immagine 2022-03-05 113808.png" class="blog-image" alt="">
+                <h1 class="blog-title">generatore password</h1>
+            </div>
+        </a>
 
 
+        <a href="typing/typing.html">
+            <div class="blog-card">
+                <img src="amogOS.png" class="blog-image" alt="">
+                <h1 class="blog-title">generatore numeri</h1>
+            </div>
+        </a>
+
+        <a href="typing/typing.html">
+            <div class="blog-card">
+                <img src="amogOS.png" class="blog-image" alt="">
+                <h1 class="blog-title">snake</h1>
+            </div>
+        </a>
+    </section>
+
+    <hr>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eius?</p>
 
 
+    <script src="home.js"></script>
+    <script type="text/javascript" src="tilt/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".blog-card"), {
+            max: 10,
+            speed: 300,
+            glare: true,
+            "max-glare": 0.3,
+
+        });
+    </script>
 
 </body>
 
