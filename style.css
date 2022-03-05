@@ -11,6 +11,16 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 .logo {
     margin-left: 0px;
     max-width: 235px;
@@ -69,6 +79,7 @@ body {
 
 .altro {
     text-align: center;
+    padding-top: 15px;
 }
 
 h2 {
@@ -78,6 +89,7 @@ h2 {
 .blogs-section {
     width: 100%;
     padding: 70px 5vw;
+    padding-top: 7px;
     display: grid;
     grid-template-columns: repeat(3, 0fr);
     justify-content: center;

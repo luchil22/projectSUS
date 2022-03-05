@@ -9,14 +9,15 @@
 
 body {
     height: 100vh;
-    background-image: url(../amogOS.png);
+    background-image: url(../img/amogOS.png);
+    background-repeat: no-repeat;
 }
 
 .container {
-    width: 40%;
+    width: 30%;
     min-width: 450px;
-    background-color: #1c1e21;
-    padding: 80px 30px;
+    background-color: #ffffff;
+    padding: 50px 30px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -28,12 +29,13 @@ body {
 #output {
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid #e2e2e2;
+    border-bottom: 2px solid #000000;
     width: 75%;
     height: 35px;
     padding: 20px 5px;
-    font-family: 'Roboto Mono', monospace;
-    color: #f5f5f5;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: medi;
+    color: #000000;
     font-size: 18px;
     letter-spacing: 1px;
 }
@@ -43,7 +45,7 @@ button {
     height: 38px;
     background-color: transparent;
     border: none;
-    color: #ffffff;
+    color: #000000;
     font-size: 18px;
     float: right;
     text-align: right;
@@ -56,7 +58,7 @@ input[type="range"] {
     width: 85%;
     height: 3.5px;
     margin-top: 80px;
-    background-color: #e2e2e2;
+    background-color: #000000;
     border-radius: 3.5px;
 }
 
@@ -65,16 +67,16 @@ input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     height: 20px;
     width: 20px;
-    background-color: #e2e2e2;
+    background-color: #000000;
     border-radius: 50%;
 }
 
 h3 {
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     display: inline-block;
     width: 10%;
-    color: #1c1e21;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #000000;
     text-align: center;
     padding: 5px 0;
     margin-left: 3%;

@@ -1,43 +1,49 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
-body{
+
+body {
     height: 100vh;
-    background: linear-gradient(
-        #e92e3d,
-        #ff6e6a
-    ) 0 100% no-repeat;
-    background-size: 100% 50%;
+    background-image: url(../img/amogOS.png);
 }
-.container{
+
+.container {
     width: 400px;
     padding: 50px;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     background-color: #ffffff;
-    box-shadow: 0 15px 25px rgba(50,50,50,0.15);
+    box-shadow: 0 15px 25px rgba(50, 50, 50, 0.15);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Poppins",sans-serif;
 }
-.dice-wrapper{
+
+#die-1 {
+    width: 160px;
+}
+
+.rapper {
     width: 90%;
     display: flex;
     justify-content: space-around;
 }
-p{
+
+p {
     font-size: 16px;
     margin: 30px 0;
     font-weight: 500;
 }
-button{
-    background-color: #e92e3d;
+
+button {
+    background-color: #3f3f3f;
     border: none;
     outline: none;
     color: #ffffff;
@@ -46,18 +52,21 @@ button{
     letter-spacing: 1px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 17px;
 }
-.shake{
+
+.shake {
     animation: shake 0.5s infinite;
 }
-@keyframes shake{
-    0%{
+
+@keyframes shake {
+    0% {
         transform: rotate(8deg);
     }
-    50%{
+    50% {
         transform: rotate(-8deg);
     }
-    100%{
+    100% {
         transform: rotate(8deg);
     }
 }

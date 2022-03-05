@@ -1,21 +1,21 @@
 // ABCDEFGHIJKLMNOPQRSTUVWXYZ
 // abcdefghijklmnopqrstuvwxyz
-// !\"$%&/()=?@~`\\.\';:+=^*_-
+// !$%&?@
 // 0123456789
 
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!\"$%&/()=?@~`\\.\';:+=^*_-0123456789';
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!$#%&?@.0123456789';
 let output = document.getElementById("output");
 
-function randomValue(value){
-    return Math.floor(Math.random()*value);
+function randomValue(value) {
+    return Math.floor(Math.random() * value);
 }
 
-function genPassword(){
+function genPassword() {
     let length = document.getElementById('length').value;
     document.getElementById("length-val").textContent = length;
     let str = '';
 
-    for(let i=0; i<length ; i++){
+    for (let i = 0; i < length; i++) {
         let random = randomValue(characters.length);
         str += characters.charAt(random);
     }
@@ -23,7 +23,7 @@ function genPassword(){
 
 }
 
-function copyClipboard(){
+function copyClipboard() {
     output.select();
     document.execCommand('copy');
     alert("Password Copied!");
