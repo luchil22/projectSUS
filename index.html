@@ -15,7 +15,7 @@
     <nav class="navbar">
         <img src="img/sushub.png" class="logo" alt="">
         <div class="links-container">
-            <div class="link">
+            <div id="orologio" class="link">
                 <span id="hours">00</span>
                 <span>:</span>
                 <span id="minutes">00</span>
@@ -29,20 +29,19 @@
         <div>
             <h2 class="games">
                 <div class="games-text">
-                    <h2>Games</h2>
+                    <h2>Funny</h2>
                 </div>
         </div>
     </header>
 
 
     <section class="blogs-section">
-        <a href="tris/tris.html">
+        <a href="web-chat/index.html">
             <div class="blog-card">
-                <img src="img/tris.png" class="blog-image" alt="">
-                <h1 class="blog-title">tris</h1>
+                <img src="img/webchat.png" class="blog-image" alt="">
+                <h1 class="blog-title">web chat</h1>
             </div>
         </a>
-
 
         <a href="typing/typing.html">
             <div class="blog-card">
@@ -58,10 +57,12 @@
             </div>
         </a>
 
-        <div class="blog-card">
-            <img src="img/coming-soon.png" class="blog-image" alt="">
-            <h1 class="blog-title">coming soon</h1>
-        </div>
+        <a href="tris/tris.html">
+            <div class="blog-card">
+                <img src="img/tris.png" class="blog-image" alt="">
+                <h1 class="blog-title">tris</h1>
+            </div>
+        </a>
 
         <div class="blog-card">
             <img src="img/coming-soon.png" class="blog-image" alt="">
@@ -79,6 +80,7 @@
             <h2>Altro</h2>
         </div>
     </header>
+
 
     <section class="blogs-section">
         <a href="generatore-password/generatore-password.html">
@@ -109,14 +111,12 @@
     <script type="text/javascript" src="tilt/vanilla-tilt.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".blog-card"), {
-            max: 7,
+            max: 5,
             speed: 300,
             glare: true,
-            "max-glare": 0.3,
-
+            "max-glare": 0.28,
         });
     </script>
-
 </body>
 
 </html>

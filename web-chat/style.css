@@ -1,0 +1,57 @@
+body {
+    padding: 20;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    background: url(../img/amogOS.png);
+    font-weight: 600;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#message-container {
+    width: 80%;
+    max-width: 500px;
+}
+
+#message-container div {
+    padding: 10px;
+    margin: 12px;
+    border-radius: 10px;
+    background-color: #cccccc;
+}
+
+#message-container div:nth-child(2n) {
+    background-color: #FFF;
+}
+
+#send-container {
+    position: fixed;
+    bottom: 0;
+    max-width: 500px;
+    width: 80%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#message-input {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    flex-grow: 1;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+}
+
+#send-button {
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
