@@ -1,6 +1,8 @@
 const messageContainer = document.getElementById('message-container');
 const messageForm = document.getElementById('send-container');
 const messageInput = document.getElementById('message-input');
+const maxLength = 469;
+
 
 const serverip = location.host.split(':');
 const ws = new WebSocket("ws://" + serverip[0] + ":8069");
@@ -26,12 +28,15 @@ if (password == pass) {
         messageForm.addEventListener('submit', e => {
             e.preventDefault();
             const message = messageInput.value;
-            if (message.length < 469 && message.length > 0 && message != " ") {
+            if (message.length < maxLength && message.length > 0 && message != " ") {
                 ws.send(`${name}: ${message}`);
                 appendMessage(`You: ${message}`);
                 messageInput.value = '';
+            } else if (message.length == 0) {
+                alert("Il messaggio deve contenere alemeno un carattere");
+                t
             } else {
-                appendMessage("The message does not respect the requirements")
+                alert("Hai superato il limite di " + maxLength + " caratteri")
             }
         });
     }
