@@ -23,10 +23,12 @@ body {
     margin: 12px;
     border-radius: 10px;
     background-color: #cccccc;
+    word-wrap: break-word;
 }
 
 #message-container div:nth-child(2n) {
     background-color: #FFF;
+    word-wrap: break-word;
 }
 
 #send-container {

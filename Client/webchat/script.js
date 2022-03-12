@@ -5,7 +5,7 @@ const messageInput = document.getElementById('message-input');
 const serverip = location.host.split(':');
 const ws = new WebSocket("ws://" + serverip[0] + ":8069");
 
-const password = "SUS Hub(beta)";
+const password = "Topolina22";
 const pass = prompt('Enter the password!');
 if (password == pass) {
     const name = prompt('What is your name?');
@@ -26,7 +26,7 @@ if (password == pass) {
         messageForm.addEventListener('submit', e => {
             e.preventDefault();
             const message = messageInput.value;
-            if (message.length < 500 && message.length > 0 && message != " ") {
+            if (message.length < 469 && message.length > 0 && message != " ") {
                 ws.send(`${name}: ${message}`);
                 appendMessage(`You: ${message}`);
                 messageInput.value = '';
