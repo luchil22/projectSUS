@@ -140,3 +140,13 @@ h2 {
         grid-template-columns: repeat(3, 0fr);
     }
 }
+
+.section-webchat {
+    width: 100%;
+    padding: 70px 5vw;
+    padding-top: 7px;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    justify-content: center;
+    text-align: center;
+}
