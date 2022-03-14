@@ -39,6 +39,13 @@ if (name == null || name == "") {
 
 let btn = document.getElementById('btn');
 var autoscroll = true;
+
+messageContainer.addEventListener("wheel", e => {
+    autoscroll = false;
+    btn.textContent = 'autoscroll OFF'
+    btn.style.backgroundColo = '#cccccc';
+});
+
 btn.onclick = function() {
     if (autoscroll) {
         autoscroll = false;
