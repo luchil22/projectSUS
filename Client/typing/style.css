@@ -7,7 +7,7 @@
     font-family: 'Quicksand', sans-serif;
     font-weight: Semi-bold 600;
     font-size: 22px;
-    color: rgba(65, 65, 65, 0.781);
+    color: rgba(34, 34, 34, 0.781);
 }
 
 body {
@@ -151,6 +151,7 @@ body {
 }
 
 .result-details li p {
+    color: rgba(0, 0, 0, 0.829);
     font-size: 19px;
 }
 
