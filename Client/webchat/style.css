@@ -16,7 +16,7 @@ body {
 #message-container {
     width: 80%;
     max-width: 500px;
-    height: 90%;
+    padding-bottom: 55px;
 }
 
 #message-container div {
@@ -57,4 +57,16 @@ body {
     font-size: 20px;
     font-weight: bold;
     display: none;
+}
+
+#btn {
+    display: flex;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Quicksand', sans-serif;
+    width: 18%;
+    justify-content: center;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 15px;
 }

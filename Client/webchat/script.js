@@ -23,13 +23,13 @@ if (name == null || name == "") {
     messageForm.addEventListener('submit', e => {
         e.preventDefault();
         const message = messageInput.value;
-        if (message.length < maxLength && message.length > 0) {
+        if (message.length < maxLength && message.length > 0 && message != " ") {
             ws.send(`${name}: ${message}`);
             appendMessage(`You: ${message}`);
             messageInput.value = '';
         } else if (message.length == 0) {
             alert("Il messaggio deve contenere alemeno un carattere");
-        } else if (message != " ") {
+        } else if (message == " ") {
             alert("Il messaggio deve contenere delle lettere");
         } else {
             alert("Hai superato il limite di " + maxLength + " caratteri")
@@ -42,11 +42,15 @@ var autoscroll = true;
 btn.onclick = function() {
     if (autoscroll) {
         autoscroll = false;
-        alert("Autoscroll disabled");
+        btn.textContent = 'autoscroll OFF'
+        btn.style.backgroundColo = '#cccccc';
+
     } else {
         autoscroll = true;
-        alert("Autoscroll enabled");
+        btn.textContent = 'autoscroll ON'
         window.scrollBy(0, window.innerHeight);
+        btn.style.backgroundColo = 'white';
+
     }
 };
 
