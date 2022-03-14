@@ -7,7 +7,6 @@ const maxLength = 469;
 const serverip = location.host.split(':');
 const ws = new WebSocket("ws://" + serverip[0] + ":8069");
 
-const password = "Topolina22";
 const pass = prompt('Enter the password!');
 if (password == pass) {
     const name = prompt('What is your name?');
