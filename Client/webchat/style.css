@@ -16,6 +16,7 @@ body {
 #message-container {
     width: 80%;
     max-width: 500px;
+    height: 90%;
 }
 
 #message-container div {
