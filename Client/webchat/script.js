@@ -7,7 +7,7 @@ const serverip = location.host.split(':');
 const ws = new WebSocket("ws://" + serverip[0] + ":8069");
 
 const name = prompt('What is your name?');
-if (name == null || name == "") {
+if (name == null || name == "" || name == "You" || name == "you") {
     alert("You didn't set your name correctly")
 } else {
     appendMessage("Connecting to the server");
